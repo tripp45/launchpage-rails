@@ -6,4 +6,4 @@ class User < ActiveRecord::Base
   validates :usertype, presence: true, inclusion: { in: [1, 2] }
 end
 
-# fans have a :type = 1, artists with :type = 2
+# dentists have a :type = 1, consultants with :type = 2

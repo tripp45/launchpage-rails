@@ -10,12 +10,12 @@ $ ->
 
   # Create the "I'm User Type 1!" button
   fanBtn = $('<button></button>',
-    text: 'I\'m User Type 1!'
+    text: 'I\'m a Dentist!'
     class: 'btn fanBtn')
 
   # Create the "I'm User Type 2!" button
   artistBtn = $('<button></button>',
-    text: 'I\'m User Type 2!'
+    text: 'I\'m a Consultant!'
     class: 'btn artistBtn')
 
   intro.append fanBtn, artistBtn
