@@ -1,0 +1,8 @@
+<%= form_for @user, :html => { :class => "fanForm email-form"} do |f| %>
+	<h2>Are you a Dentist?</h2>
+	<p>Are you looking to improve your marketing ROI? Send us your e mail below and we'll show you how we can help!</p>
+	<%= render 'shared/error_messages', object: f.object %>
+	<%= f.text_field :email, :placeholder => "Enter your email" %>
+	<%= f.hidden_field :usertype, :value => "1" %>
+	<%= f.submit "Submit", class: "btn" %>
+<% end %>
