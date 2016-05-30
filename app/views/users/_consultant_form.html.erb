@@ -1,0 +1,8 @@
+<%= form_for @user, :html => { :class => "artistForm email-form"} do |f| %>
+	<h2>Are you a dental consultant?</h2>
+	<p>We can provide a full suite of marketing services, so you don't need to manage separate companies for each type of campaign you want to try. Give us your email and we'll show you how we can help!</p>
+	<%= render 'shared/error_messages', object: f.object %>
+	<%= f.text_field :email, :placeholder => "Enter your email" %>
+	<%= f.hidden_field :usertype, :value => "2" %>
+	<%= f.submit "Submit", class: "btn" %>
+<% end %>

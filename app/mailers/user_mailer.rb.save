@@ -1,0 +1,11 @@
+class UserMailer < ActionMailer::Base
+	default :from => ENV["FROM_EMAIL"]
+
+	def registration_confirmation(user)
+		#MAIL TO USER
+                mail(:to => use, :subject => ENV["MAIL_SUBJECT"])
+
+		#MAIL TO US
+		mail(:to => user.email, :subject => ENV["MAIL_SUBJECT"])
+	end
+end
