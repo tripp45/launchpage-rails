@@ -6,7 +6,7 @@ require 'rails/commands/server'
                          alias :default_options_alias :default_options
                   
                def default_options
-               default_options_alias.merge!(:Host => '0.0.0.0',:Port => 3000)
+               default_options_alias.merge!(:Host => '0.0.0.0',:Port => 80)
                        end   
              end
        end
