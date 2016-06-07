@@ -41,7 +41,11 @@ GEM
       thread_safe (~> 0.3, >= 0.3.4)
       tzinfo (~> 1.1)
     arel (6.0.3)
+<<<<<<< HEAD
     autoprefixer-rails (6.3.6.2)
+=======
+    autoprefixer-rails (6.3.6.1)
+>>>>>>> 2d958669ee28383b011e1e501def7d8d8ebcdd35
       execjs
     bootstrap-sass (3.3.5)
       autoprefixer-rails (>= 5.0.0.1)
