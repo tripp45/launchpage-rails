@@ -2,7 +2,10 @@
 	<h2>Are you a Dentist?</h2>
 	<p>Are you looking to improve your marketing ROI? Send us your e mail below and we'll show you how we can help!</p>
 	<%= render 'shared/error_messages', object: f.object %>
-	<%= f.text_field :email, :placeholder => "Enter your email" %>
+	<%= f.text_field :first_name, :placeholder => "First Name" %><br>
+        <%= f.text_field :last_name, :placeholder => "Last Name" %><br>
+        <%= f.text_field :email, :placeholder => "email" %><br>
+        <%= f.text_field :phone, :placeholder => "phone" %><br>
 	<%= f.hidden_field :usertype, :value => "1" %>
 	<%= f.submit "Submit", class: "btn" %>
 <% end %>

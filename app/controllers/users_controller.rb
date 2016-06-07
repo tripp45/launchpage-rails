@@ -12,7 +12,7 @@ class UsersController < ApplicationController
     if @user.save
       flash[:success] = "POST save message"
       redirect_to '/success'
-      UserMailer.registration_confirmation(@user).deliver
+      #UserMailer.registration_confirmation(@user).deliver
     else
       render 'new'
     end
@@ -38,7 +38,7 @@ class UsersController < ApplicationController
   private
 
   def user_params
-    user_params = params.require(:user).permit(:email, :usertype)
+    user_params = params.require(:user).permit(:email, :usertype, :phone, :first_name, :last_name)
     usertype = user_params[:usertype]
     usertype = usertype.to_i if usertype.to_i
     user_params
